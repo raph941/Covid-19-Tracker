@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "covid19app-monitor",
     "public": "build",
     "ignore": [
       "firebase.json",
