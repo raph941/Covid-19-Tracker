@@ -48,7 +48,7 @@ function App() {
   const onCountryChange = async (event) => {
     const countryCode = event.target.value;
 
-    if (countryCode=='worldwide') {
+    if (countryCode==='worldwide') {
       setMApZoom(2) 
     }
     else{
@@ -94,9 +94,9 @@ function App() {
         </div>
 
         <div className="app__stats">
-          <InfoBox caseType="cases" isactive={caseType == 'cases'} title="Coronavirus Cases" onClick={e => setCaseType('cases')} cases={prettyPrintStat(countryInfo.todayCases)} total={prettyPrintStat(countryInfo.cases)} />
-          <InfoBox caseType="recovered" isactive={caseType == 'recovered'} title="Recovered" onClick={e => setCaseType('recovered')} cases={prettyPrintStat(countryInfo.todayRecovered)} total={prettyPrintStat(countryInfo.recovered)} />
-          <InfoBox caseType="deaths" isactive={caseType == 'deaths'} title="Deaths" onClick={e => setCaseType('deaths')} cases={prettyPrintStat(countryInfo.todayDeaths)} total={prettyPrintStat(countryInfo.deaths)} />
+          <InfoBox caseType="cases" isactive={caseType === 'cases'} title="Coronavirus Cases" onClick={e => setCaseType('cases')} cases={prettyPrintStat(countryInfo.todayCases)} total={prettyPrintStat(countryInfo.cases)} />
+          <InfoBox caseType="recovered" isactive={caseType === 'recovered'} title="Recovered" onClick={e => setCaseType('recovered')} cases={prettyPrintStat(countryInfo.todayRecovered)} total={prettyPrintStat(countryInfo.recovered)} />
+          <InfoBox caseType="deaths" isactive={caseType === 'deaths'} title="Deaths" onClick={e => setCaseType('deaths')} cases={prettyPrintStat(countryInfo.todayDeaths)} total={prettyPrintStat(countryInfo.deaths)} />
         </div>
 
         <Map 
