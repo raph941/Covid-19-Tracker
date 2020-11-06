@@ -3,6 +3,7 @@ import { Card, CardContent, Typography } from '@material-ui/core'
 import "../styles/InfoBox.css"
 
 function InfoBox({ title, cases, isactive, total, caseType, ...props }){
+    console.log(cases)
     return (
         <Card className={`infoBox ${caseType} ${isactive && "infoBox--selected"}`}
             onClick={props.onClick}
