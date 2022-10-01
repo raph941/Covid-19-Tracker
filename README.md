@@ -14,4 +14,3 @@ To use this app on your machine, simply follow the steps
 1. Install NodeJs on your machine, and get npm or yarn
 2. run: "npm install" or "yarn installed" (run in the project root directory) 
 3. run: "npm start"
-4. Enjoy 🤝🚀
